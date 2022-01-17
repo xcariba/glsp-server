@@ -107,6 +107,15 @@
 						</executions>
 					</plugin>
 				</plugins>
+				<resources>
+					<resource>
+					  <directory>model</directory>
+					  <targetPath>model</targetPath>
+					  <includes>
+						<include>**/*</include>
+					  </includes>
+					</resource>
+				  </resources>
 			</build>
 		</profile>
 	</profiles>

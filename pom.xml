@@ -320,37 +320,6 @@
 						<artifactId>maven-failsafe-plugin</artifactId>
 						<version>${maven.failsafe.version}</version>
 					</plugin>
-					<!-- to disable use -Dcheckstyle.skip -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-checkstyle-plugin</artifactId>
-						<version>${maven.checkstyle.version}</version>
-						<configuration>
-							<configLocation>emfcloud-checkstyle-${checkstyle.version}.xml</configLocation>
-							<consoleOutput>true</consoleOutput>
-							<excludes>**/src-gen/**/*.java</excludes>
-						</configuration>
-						<executions>
-							<execution>
-								<phase>validate</phase>
-								<goals>
-									<goal>check</goal>
-								</goals>
-							</execution>
-						</executions>
-						<dependencies>
-							<dependency>
-								<groupId>org.eclipse.emfcloud</groupId>
-								<artifactId>org.eclipse.emfcloud.checkstyle</artifactId>
-								<version>${emfcloud.checkstyle.version}</version>
-							</dependency>
-							<dependency>
-								<groupId>com.puppycrawl.tools</groupId>
-								<artifactId>checkstyle</artifactId>
-								<version>${checkstyle.version}</version>
-							</dependency>
-						</dependencies>
-					</plugin>
 				</plugins>
 			</build>
 		</profile>
