@@ -274,37 +274,6 @@
 							</argLine>
 						</configuration>
 					</plugin>
-					<!-- to disable use -Dcheckstyle.skip -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-checkstyle-plugin</artifactId>
-						<version>${checkstyle.plugin}</version>
-						<configuration>
-							<configLocation>emfcloud-checkstyle-8.44.xml</configLocation>
-							<consoleOutput>true</consoleOutput>
-							<excludes>**/src-gen/**/*.java</excludes>
-						</configuration>
-						<executions>
-							<execution>
-								<phase>validate</phase>
-								<goals>
-									<goal>check</goal>
-								</goals>
-							</execution>
-						</executions>
-						<dependencies>
-							<dependency>
-								<groupId>org.eclipse.emfcloud</groupId>
-								<artifactId>org.eclipse.emfcloud.checkstyle</artifactId>
-								<version>0.1.0-SNAPSHOT</version>
-							</dependency>
-							<dependency>
-								<groupId>com.puppycrawl.tools</groupId>
-								<artifactId>checkstyle</artifactId>
-								<version>${checkstyle}</version>
-							</dependency>
-						</dependencies>
-					</plugin>
 				</plugins>
 			</build>
 		</profile>
