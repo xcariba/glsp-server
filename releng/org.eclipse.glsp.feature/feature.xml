@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.glsp.feature"
       label="GLSP SDK"
-      version="0.9.0"
+      version="0.9.0.1"
       provider-name="Eclipse GLSP">
 
    <description url="http://www.example.com/description">
@@ -320,7 +320,7 @@ version(s), and exceptions or additional permissions here}.&quot;
       <import plugin="org.apache.commons.cli" version="1.4.0" match="greaterOrEqual"/>
       <import plugin="com.google.inject" version="5.0.1" match="greaterOrEqual"/>
       <import plugin="javax.websocket" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.glsp.graph" version="0.9.0" match="compatible"/>
+      <import plugin="org.eclipse.glsp.graph" version="0.9.0.1" match="compatible"/>
       <import plugin="org.junit"/>
       <import plugin="org.junit.jupiter.api"/>
       <import plugin="org.eclipse.emf.common" version="2.15.0" match="greaterOrEqual"/>
