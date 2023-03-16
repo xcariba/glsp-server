@@ -18,16 +18,16 @@ package org.eclipse.glsp.example.workflow.handler;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Level;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.example.workflow.action.LogAction;
 import org.eclipse.glsp.server.actions.AbstractActionHandler;
 import org.eclipse.glsp.server.actions.Action;
 import org.eclipse.glsp.server.types.Severity;
 
 public class LogActionHandler extends AbstractActionHandler<LogAction> {
-   private static Logger LOGGER = LogManager.getLogger(LogActionHandler.class);
+   private static Logger LOGGER = Logger.getLogger(LogActionHandler.class);
 
    @Override
    protected List<Action> executeAction(final LogAction action) {

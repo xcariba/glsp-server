@@ -24,9 +24,9 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.eclipse.glsp.server.actions.Action;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.server.actions.ActionMessage;
 import org.eclipse.glsp.server.actions.ActionRegistry;
 import org.eclipse.glsp.server.session.ClientSession;
@@ -39,7 +39,7 @@ import org.eclipse.lsp4j.jsonrpc.messages.ResponseErrorCode;
 import com.google.inject.Inject;
 
 public class DefaultGLSPServer implements GLSPServer {
-   private static Logger LOGGER = LogManager.getLogger(DefaultGLSPServer.class);
+   private static Logger LOGGER = Logger.getLogger(DefaultGLSPServer.class);
    public static final String PROTOCOL_VERSION = "1.0.0";
 
    @Inject

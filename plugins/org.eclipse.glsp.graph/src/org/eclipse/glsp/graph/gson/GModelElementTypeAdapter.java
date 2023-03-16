@@ -25,8 +25,8 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.EMap;
 import org.eclipse.emf.ecore.EClass;
@@ -44,7 +44,7 @@ import com.google.gson.stream.JsonWriter;
 
 public class GModelElementTypeAdapter extends PropertyBasedTypeAdapter<GModelElement> {
 
-   private static final Logger LOGGER = LogManager.getLogger(GModelElementTypeAdapter.class);
+   private static final Logger LOGGER = Logger.getLogger(GModelElementTypeAdapter.class);
 
    private final Gson gson;
    private final Map<String, EClass> typeMap;

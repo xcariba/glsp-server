@@ -17,8 +17,8 @@ package org.eclipse.glsp.server.features.undoredo;
 
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.server.actions.Action;
 import org.eclipse.glsp.server.actions.ActionHandler;
 import org.eclipse.glsp.server.actions.SetDirtyStateAction;
@@ -29,7 +29,7 @@ import com.google.common.collect.Lists;
 import com.google.inject.Inject;
 
 public class UndoRedoActionHandler implements ActionHandler {
-   private static final Logger LOGGER = LogManager.getLogger(UndoRedoActionHandler.class);
+   private static final Logger LOGGER = Logger.getLogger(UndoRedoActionHandler.class);
 
    @Inject
    protected ModelSubmissionHandler modelSubmissionHandler;

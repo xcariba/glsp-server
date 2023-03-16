@@ -29,8 +29,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.Optional;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.graph.DefaultTypes;
 import org.eclipse.glsp.graph.GGraph;
 import org.eclipse.glsp.graph.GModelRoot;
@@ -51,7 +51,7 @@ import com.google.inject.Inject;
  */
 public class GModelStorage implements SourceModelStorage {
 
-   private static Logger LOGGER = LogManager.getLogger(GModelStorage.class);
+   private static Logger LOGGER = Logger.getLogger(GModelStorage.class);
    private static String EMPTY_ROOT_ID = "glsp-graph";
 
    @Inject

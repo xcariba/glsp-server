@@ -19,8 +19,8 @@ import static org.eclipse.glsp.server.types.GLSPServerException.getOrThrow;
 
 import java.util.Optional;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.emf.common.command.Command;
 import org.eclipse.glsp.graph.GDimension;
 import org.eclipse.glsp.graph.GModelElement;
@@ -39,7 +39,7 @@ import org.eclipse.glsp.server.types.ElementAndBounds;
  */
 public class GModelChangeBoundsOperationHandler extends GModelOperationHandler<ChangeBoundsOperation> {
 
-   private static Logger LOGGER = LogManager.getLogger(GModelChangeBoundsOperationHandler.class);
+   private static Logger LOGGER = Logger.getLogger(GModelChangeBoundsOperationHandler.class);
 
    @Override
    public Optional<Command> createCommand(final ChangeBoundsOperation operation) {

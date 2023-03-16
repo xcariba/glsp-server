@@ -22,8 +22,8 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.emf.common.command.Command;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.glsp.graph.GEdge;
@@ -38,7 +38,7 @@ import org.eclipse.glsp.server.operations.GModelOperationHandler;
  * Applies {@link DeleteOperation} directly to the GModel.
  */
 public class GModelDeleteOperationHandler extends GModelOperationHandler<DeleteOperation> {
-   private static Logger LOGGER = LogManager.getLogger(GModelDeleteOperationHandler.class);
+   private static Logger LOGGER = Logger.getLogger(GModelDeleteOperationHandler.class);
    protected Set<String> allDependantsIds;
 
    @Override
