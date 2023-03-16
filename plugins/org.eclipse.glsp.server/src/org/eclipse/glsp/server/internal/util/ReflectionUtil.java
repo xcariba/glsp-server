@@ -22,11 +22,11 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 
 public final class ReflectionUtil {
-   private static Logger LOGGER = LogManager.getLogger(ReflectionUtil.class);
+   private static Logger LOGGER = Logger.getLogger(ReflectionUtil.class);
 
    private ReflectionUtil() {}
 

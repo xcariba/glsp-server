@@ -19,10 +19,9 @@ import java.net.InetSocketAddress;
 
 import javax.websocket.server.ServerEndpointConfig;
 
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.config.Configurator;
+import org.apache.log4j.Level;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.server.di.ServerModule;
 import org.eclipse.glsp.server.launch.GLSPServerLauncher;
 import org.eclipse.jetty.server.Server;
@@ -32,7 +31,7 @@ import org.eclipse.jetty.websocket.javax.server.config.JavaxWebSocketServletCont
 import com.google.inject.Module;
 
 public class WebsocketServerLauncher extends GLSPServerLauncher {
-   private static Logger LOGGER = LogManager.getLogger(WebsocketServerLauncher.class);
+   private static Logger LOGGER = Logger.getLogger(WebsocketServerLauncher.class);
    protected Server server;
    protected final String endpointPath;
    protected final Level websocketLogLevel;
@@ -54,7 +53,6 @@ public class WebsocketServerLauncher extends GLSPServerLauncher {
    @SuppressWarnings("checkstyle:IllegalCatch")
    public void start(final String hostname, final int port) {
       try {
-         Configurator.setLevel("org.eclipse.jetty", this.websocketLogLevel);
          // Setup Jetty Server
          server = new Server(new InetSocketAddress(hostname, port));
          ServletContextHandler webAppContext;

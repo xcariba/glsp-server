@@ -17,7 +17,7 @@ package org.eclipse.glsp.example.workflow.launch;
 
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.apache.logging.log4j.Level;
+import org.apache.log4j.Level;
 import org.eclipse.glsp.server.launch.DefaultCLIParser;
 
 public class WorkflowCLIParser extends DefaultCLIParser {

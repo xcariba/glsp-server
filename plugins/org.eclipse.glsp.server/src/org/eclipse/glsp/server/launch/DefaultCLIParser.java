@@ -20,7 +20,7 @@ import java.util.function.Predicate;
 
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.apache.logging.log4j.Level;
+import org.apache.log4j.Level;
 import org.eclipse.glsp.server.utils.LaunchUtil;
 import org.eclipse.glsp.server.utils.LaunchUtil.DefaultOptions;
 

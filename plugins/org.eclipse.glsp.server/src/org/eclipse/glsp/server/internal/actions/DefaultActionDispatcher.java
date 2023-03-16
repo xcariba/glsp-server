@@ -28,8 +28,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.server.actions.Action;
 import org.eclipse.glsp.server.actions.ActionDispatcher;
 import org.eclipse.glsp.server.actions.ActionHandler;
@@ -53,7 +53,7 @@ import com.google.inject.Provider;
  */
 public class DefaultActionDispatcher extends Disposable implements ActionDispatcher, ActionHandler {
 
-   private static final Logger LOGGER = LogManager.getLogger(DefaultActionDispatcher.class);
+   private static final Logger LOGGER = Logger.getLogger(DefaultActionDispatcher.class);
 
    private static final AtomicInteger COUNT = new AtomicInteger(0);
 

@@ -31,8 +31,8 @@ import java.util.concurrent.Future;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.server.di.ServerModule;
 import org.eclipse.glsp.server.gson.ServerGsonConfigurator;
 import org.eclipse.glsp.server.protocol.GLSPClient;
@@ -46,7 +46,7 @@ import com.google.inject.Module;
 
 public class SocketGLSPServerLauncher extends GLSPServerLauncher {
    public static final String START_UP_COMPLETE_MSG = "[GLSP-Server]:Startup completed";
-   private static Logger LOGGER = LogManager.getLogger(SocketGLSPServerLauncher.class);
+   private static Logger LOGGER = Logger.getLogger(SocketGLSPServerLauncher.class);
 
    private ExecutorService threadPool;
    private AsynchronousServerSocketChannel serverSocket;

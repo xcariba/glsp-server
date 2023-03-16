@@ -19,13 +19,13 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.server.actions.ServerMessageAction;
 import org.eclipse.glsp.server.types.Severity;
 
 public final class ServerMessageUtil {
-   private static Logger LOGGER = LogManager.getLogger(ServerMessageUtil.class);
+   private static Logger LOGGER = Logger.getLogger(ServerMessageUtil.class);
 
    private ServerMessageUtil() {}
 

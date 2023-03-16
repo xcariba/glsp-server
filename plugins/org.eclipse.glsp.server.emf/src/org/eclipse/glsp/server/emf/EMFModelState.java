@@ -15,8 +15,8 @@
  ********************************************************************************/
 package org.eclipse.glsp.server.emf;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.emf.common.command.CommandStack;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -43,7 +43,7 @@ import com.google.inject.Inject;
  */
 public class EMFModelState extends DefaultGModelState implements ClientSessionListener {
 
-   private static Logger LOGGER = LogManager.getLogger(EMFModelState.class.getSimpleName());
+   private static Logger LOGGER = Logger.getLogger(EMFModelState.class.getSimpleName());
 
    @Inject
    protected ClientSessionManager clientSessionManager;

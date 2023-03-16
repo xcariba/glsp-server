@@ -18,8 +18,8 @@ package org.eclipse.glsp.server.features.navigation;
 import java.util.List;
 import java.util.Optional;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.log4j.Logger;
 import org.eclipse.glsp.server.actions.AbstractActionHandler;
 import org.eclipse.glsp.server.actions.Action;
 
@@ -27,7 +27,7 @@ import com.google.inject.Inject;
 
 public class ResolveNavigationTargetActionHandler extends AbstractActionHandler<ResolveNavigationTargetAction> {
 
-   private static final Logger LOGGER = LogManager.getLogger(ResolveNavigationTargetActionHandler.class);
+   private static final Logger LOGGER = Logger.getLogger(ResolveNavigationTargetActionHandler.class);
 
    @Inject
    protected Optional<NavigationTargetResolver> navigationTargetResolver;
