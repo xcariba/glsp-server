@@ -39,8 +39,8 @@
 	<properties>
 	
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.source>17</java.source>
-		<java.target>17</java.target>
+		<java.source>11</java.source>
+		<java.target>11</java.target>
 		<project.build.java.target>17</project.build.java.target>
 		
 		<!-- Maven Plugin Versions: General maven plugin versions -->

@@ -46,13 +46,13 @@ public class GhostElement {
    }
 
    public Optional<String> getTemplateElementId() {
-      return template instanceof String templateElementId ? Optional.of(templateElementId) : Optional.empty();
+      return template instanceof String ? Optional.of((String)template) : Optional.empty();
    }
 
    public void setTemplateElementId(final String templateElementId) { this.template = templateElementId; }
 
    public Optional<GModelElement> getTemplateElement() {
-      return template instanceof GModelElement templateElement ? Optional.of(templateElement) : Optional.empty();
+      return template instanceof GModelElement ? Optional.of((GModelElement)template) : Optional.empty();
    }
 
    public void setTemplateElement(final GModelElement templateElement) { this.template = templateElement; }
